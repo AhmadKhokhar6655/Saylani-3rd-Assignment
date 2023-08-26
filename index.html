@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TROPIKO</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        padding: 0px 60px;
+      }
+      .head {
+        background-color: rgb(235, 235, 235);
+      }
+      .logo {
+        display: inline-block;
+        align-items: center;
+      }
+      .logo img {
+        display: inline-block;
+        width: 35px;
+        box-sizing: border-box;
+        position: relative;
+        top: 9px;
+      }
+      .logo span {
+        display: inline-block;
+        /* position: relative;
+            top: -7px; */
+        font-size: 20px;
+        font-weight: 700;
+        color: #2e2e2d;
+        box-sizing: border-box;
+        margin-top: 0%;
+      }
+      .r_btn,
+      ul li {
+        display: inline-block;
+      }
+      .r_btn ul {
+        padding-left: 550px;
+      }
+      .r_btn ul li {
+        padding-left: 25px;
+        color: #343434;
+        font-size: 12px;
+      }
+      .r_btn ul li img {
+        width: 20px;
+      }
+      .r_btn ul li a {
+        text-decoration: none;
+        color: #2e2e2d;
+      }
+      .r_btn ul li input {
+        padding: 5px 15px;
+        background-color: #fc5d35;
+        color: #f7f7f7;
+        font-size: 12px;
+        border: none;
+      }
+      .welcome {
+        height: 100%;
+        display: inline-block;
+      }
+      .wel_text {
+        /* display: inline-block; */
+        width: 50%;
+        float: left;
+      }
+      .wel_text h1 {
+        font-weight: 700;
+        font-size: 50px;
+        width: 95%;
+      }
+      .wel_img {
+        /* display: inline-block; */
+        max-width: 50%;
+        float: right;
+      }
+      .welcome img {
+        width: 450px;
+        padding-right: 50px;
+      }
+      .wel_btn {
+        display: inline-block;
+        padding: 10px 0;
+        text-align: center;
+        width: 145px;
+        outline: none;
+        color: #f7f7f7;
+        border: 1px solid transparent;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+      .wel_btn1 {
+        background-color: #fc5d35;
+      }
+      .wel_btn2 {
+        background-color: #000000;
+      }
+      .services {
+        margin-top: 50px;
+      }
+      .services h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-weight: 25px;
+      }
+      .services p {
+        text-align: center;
+      }
+      .ser_box {
+        display: inline-block;
+        border: 1px solid rgb(200, 200, 200);
+        margin: 30px 25px;
+        width: 28%;
+        height: 350px;
+        text-align: center;
+      }
+      .ser_box img {
+        width: 50px;
+        display: block;
+        margin: 55px auto 5px auto;
+      }
+      .ser_box h3 {
+        color: #fc5d35;
+        font-weight: 10;
+      }
+      .ser_box p {
+        margin: 0px 20px;
+      }
+      .read_more a {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        width: 145px;
+        outline: none;
+        color: #f7f7f7;
+        border: 1px solid transparent;
+        background-color: #000000;
+        text-decoration: none;
+        margin: 5px auto;
+      }
+      .row_box {
+        margin-top: 50px;
+        height: 200px;
+      }
+      .row_box_text {
+        display: inline-block;
+        width: 70%;
+      }
+      .row_box_img {
+        display: inline-block;
+        /* width: 40%; */
+      }
+      .row_box_img img {
+        width: 200px;
+      }
+      .grapes img {
+        width: 100px !important;
+        height: 170px;
+      }
+      .row_p {
+        margin-top: 5px;
+        text-align: left !important;
+      }
+      .row_box_text a {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        width: 145px;
+        outline: none;
+        color: #f7f7f7;
+        border: 1px solid transparent;
+        background-color: #000000;
+        text-decoration: none;
+      }
+      .testimonial img {
+        display: block;
+        margin: 40px auto;
+      }
+      .testimonial h3 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 25px;
+      }
+      .testimonial p {
+        padding: 0px 100px;
+      }
+      .contact {
+        margin-top: 140px;
+        background-image: url(../images/orange-dish.png);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: right center;
+      }
+      .con_text {
+        display: inline-block;
+      }
+      .con_text input {
+        display: block;
+        border: none;
+        outline: none;
+        border-bottom: 0.8px solid #252525;
+        width: 600px;
+        height: 40px;
+        margin: 10px 0;
+        font-size: large;
+      }
+      .con_text input[type="textarea"] {
+        margin-top: 50px !important;
+      }
+      .con_text a {
+        margin: 15px 0px !important;
+        width: 100px;
+      }
+      .foot {
+        margin-top: 40px;
+      }
+      .foot_col {
+        display: inline-block;
+        width: 23%;
+        height: 300px;
+      }
+      .foot_col h2{
+        font-weight: normal;
+        font-size: x-large;
+      }
+      .foot_col ul li{
+        display: block;
+        padding: 0%;
+        margin: 0%;
+      }
+      .foot_col ul{
+        padding: 0%;
+        margin: 0%;
+      }
+      .foot_col img{
+        width: 35px;
+        margin-right: 5px;
+      }
+      .sub input{
+        margin-top: 5px;
+        width: 225px;
+        height: 30px;
+      }
+      .sub{
+        margin-top: 10px;
+      }
+      .sub span{
+        font-weight:normal;
+        font-size: large;
+      }
+      .sub a{
+        margin: 10px 0px;
+        width: 130px !important;
+      }
+      .footer{
+        background-color: #efeded;
+        padding: 10px 0;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="nav_bar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" />
+          <span>TROPIKO</span>
+        </div>
+        <div class="r_btn">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><img src="./images/search-icon.png" alt="" /></li>
+            <li><input type="button" value="GET A QOUTE" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="welcome">
+        <div class="wel_text">
+          <h1>Welcome to Our Fruits Shop</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <div>
+            <a href="#" class="wel_btn wel_btn1">SHOP NOW</a>
+            <a href="#" class="wel_btn wel_btn2">CONTACT US</a>
+          </div>
+        </div>
+        <div class="wel_img">
+          <img src="./images/slide-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <h2>Our Services</h2>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have
+      </p>
+      <div class="ser_box_block">
+        <div class="ser_box">
+          <img src="./images/card-item-1.png" alt="" />
+          <h3>Orange</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <div class="ser_box">
+          <img src="./images/card-item-2.png" alt="" />
+          <h3>Grapes</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <div class="ser_box">
+          <img src="./images/card-item-3.png" alt="" />
+          <h3>Gauva</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+      </div>
+      <div class="read_more">
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="services">
+      <h2>Fresh Fruits</h2>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have
+      </p>
+      <div class="row_box">
+        <div class="row_box_text">
+          <h3>Best Fresh Orange</h3>
+          <p class="row_p">
+            but the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be
+          </p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="row_box_img">
+          <img src="./images/orange.png" alt="" />
+        </div>
+      </div>
+      <div class="row_box">
+        <div class="row_box_text">
+          <h3>Best Fresh Grapes</h3>
+          <p class="row_p">
+            but the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be
+          </p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="row_box_img grapes">
+          <img src="./images/grapes.png" alt="" />
+        </div>
+      </div>
+      <div class="row_box">
+        <div class="row_box_text">
+          <h3>Best Fresh Gauva</h3>
+          <p class="row_p">
+            but the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be
+          </p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="row_box_img">
+          <img src="./images/gauva.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="services testimonial">
+      <h2>Testimonial</h2>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have
+      </p>
+      <img src="./images/client.png" alt="" />
+      <h3>Johnhex</h3>
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable. If you are
+        going to use a passage of Lorem Ipsum, you need to be sure
+      </p>
+    </div>
+    <div class="contact">
+      <div class="con_text">
+        <h1>Contact Us</h1>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input
+          type="text"
+          name="numbers"
+          id="number"
+          placeholder="Phone Number"
+        />
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input type="textarea" id="message" placeholder="Message" />
+        <a href="#" class="wel_btn wel_btn1">SEND</a>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="foot_col">
+        <h2>Fruits</h2>
+        <ul>
+          <li>randomised</li>
+          <li>words which</li>
+          <li>don't look even</li>
+          <li>slightly</li>
+          <li>believable. If you</li>
+          <li>are going to use</li>
+          <li>a passage of</li>
+          <li>Lorem Ipsum,</li>
+        </ul>
+      </div>
+      <div class="foot_col">
+        <h2>Services</h2>
+        <ul>
+          <li>randomised</li>
+          <li>words which</li>
+          <li>don't look even</li>
+          <li>slightly</li>
+          <li>believable. If you</li>
+          <li>are going to use</li>
+          <li>a passage of</li>
+          <li>Lorem Ipsum,</li>
+        </ul>
+      </div>
+      <div class="foot_col">
+        <h2>List</h2>
+        <ul>
+          <li>randomised</li>
+          <li>words which</li>
+          <li>don't look even</li>
+          <li>slightly</li>
+          <li>believable. If you</li>
+          <li>are going to use</li>
+          <li>a passage of</li>
+          <li>Lorem Ipsum,</li>
+        </ul>
+      </div>
+      <div class="foot_col">
+        <h2>Follow Us</h2>
+        <img src="./images/fb.png" alt="">
+        <img src="./images/twitter.png" alt="">
+        <img src="./images/linkedin.png" alt="">
+        <img src="./images/instagram.png" alt="">
+        <div class="sub">
+            <span class="sub_text">Subscribe Now</span>
+            <input type="text" name="" >
+            <a href="#" class="wel_btn wel_btn1">Subscribe</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2022 All Rights Reserved By Dev Umair</p>
+    </div>
+  </body>
+</html>
