@@ -2,6 +2,6 @@
 
 Create a website using 
 
-  1-  HTML
+    1-  HTML
 
-2-  CSS
+    2-  CSS
